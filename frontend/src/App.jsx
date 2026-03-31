@@ -3,7 +3,7 @@ function App() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:8000/")
+    fetch("https://cuddly-palm-tree-7vv54jvxqwxpcx474-8000.app.github.dev")
       .then(res => res.json())
       .then(data => setMessage(data.message))
   },[]);
